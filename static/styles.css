@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3a3d40 0%, #181818 100%);
+}
+
+.main-header {
+    background-color: #1f1f1f;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Video Player Styles */
+.video-wrapper {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 215px;
+    border: none;
+}
+
+/* Container and Main Content Styles */
+.container {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 350px;
+    width: 90%; /* Ensure it stays within bounds */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Ensure the input uses the Poppins font */
+    font-weight: 500;
+    color: #E0E0E0;
+    background-color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+/* General button styles */
+button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #6200EE;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #3700B3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(98, 0, 238, 0.5);
+}
+
+button:active {
+    transform: translateY(1px);
+    background-color: #6200EE;
+}
+
+/* Styles for the resolution dropdown */
+#format-select {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #6200EE;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+#format-select:hover {
+    background-color: #3700B3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(98, 0, 238, 0.5);
+}
+
+#format-select:active {
+    transform: translateY(1px);
+    background-color: #6200EE;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #1f1f1f;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+/* Loader Styles */
+#loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #6200EE;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Styles for the "Download Another Video" button */
+#refresh-button {
+    background-color: #28a745;
+}
+
+#refresh-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5);
+}
+
+#refresh-button:active {
+    transform: translateY(1px);
+    background-color: #28a745;
+}
